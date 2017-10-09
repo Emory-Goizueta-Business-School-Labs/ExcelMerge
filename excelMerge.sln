@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excelMerge", "excelMerge\excelMerge.csproj", "{A2594CC6-E6D7-4670-8E11-C87C60B42BFB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{B5B4978D-EB87-41C7-A834-0E075AA0D29D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2594CC6-E6D7-4670-8E11-C87C60B42BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2594CC6-E6D7-4670-8E11-C87C60B42BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2594CC6-E6D7-4670-8E11-C87C60B42BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2594CC6-E6D7-4670-8E11-C87C60B42BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B4978D-EB87-41C7-A834-0E075AA0D29D}.Debug|Any CPU.ActiveCfg = Debug
+		{B5B4978D-EB87-41C7-A834-0E075AA0D29D}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
