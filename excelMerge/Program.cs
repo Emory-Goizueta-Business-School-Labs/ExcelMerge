@@ -20,10 +20,9 @@
  * 
  * You may specify in a single optional parameter the number of the spreadsheet header row. During concatenation of the data from the various
  * spreadsheets, that row number will be assumed to be a header, and all rows before it will be skipped. The header row will appear only once
- * in the output file. Only the first worksheet in an excel workbook is processed. Non-excel files (not xls or xlsx) in the direcectory are
- * ignored.
+ * in the output file. Only the first worksheet in an excel workbook is processed. 
  * 
- * *** Warning: no worksheet structural validation is present. If your header rows do not match, the files will still be processed as-is and
+ * *** Warning: o worksheet structural validation is present. If your header rows do not match, the files will still be processed as-is and
  * *** data from the unmatching columns appended as-is to the final output. Output file is overwritten WITHOUT NOTICE.
  * 
  * * TODO: MAKE THIS MORE FLEXIBLE AND ADD HEADER VALIDATION
@@ -87,7 +86,7 @@ namespace excelMerge
     class Program
     {
 
-        public static int headerRow = 1;
+        protected static int headerRow = 1;
 
         static void Usage()
         {
@@ -103,7 +102,6 @@ namespace excelMerge
 
         static int Main(string[] args)
         {
-            int headerRow = 1;
             string headerRowOption = "";
             String directory = "";
             switch (args.Length) {

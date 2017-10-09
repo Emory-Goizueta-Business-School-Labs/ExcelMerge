@@ -65,7 +65,7 @@ namespace excelMerge
         void CopyHeader()
         {
             string columnEnd = excelColumns[sheetSource.UsedRange.Columns.Count];
-            Excel.Range range = sheetSource.get_Range("A1", columnEnd + _headerRowCount.ToString());
+            Excel.Range range = sheetSource.get_Range(string.Format("A{0}", _headerRowCount), columnEnd + _headerRowCount.ToString());
             range.Copy(sheetDest.get_Range("A1", Missing.Value));
             _currentRowCount += _headerRowCount;
         }
@@ -76,7 +76,7 @@ namespace excelMerge
             //int sheetColumnCount = sheetSource.UsedRange.Columns.Count;
             string columnEnd = excelColumns[sheetSource.UsedRange.Columns.Count];
 
-            Excel.Range range = sheetSource.get_Range(string.Format("A{0}", _headerRowCount), columnEnd + sheetRowCount.ToString());
+            Excel.Range range = sheetSource.get_Range(string.Format("A{0}", _headerRowCount+1), columnEnd + sheetRowCount.ToString());
             range.Copy(sheetDest.get_Range(string.Format("A{0}", _currentRowCount), Missing.Value));
             _currentRowCount += range.Rows.Count;
         }
